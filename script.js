@@ -1,12 +1,23 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	for(let i=0; i<str.length; i++){
-		if(str[i]!==str[i+1]){
-			return str[i]
-		}else {
-			return null
-		}
+	
+	let strLowerCase= str.toLowercase()
+	if(str.length==0){
+		return null
 	}
+	for(let i=0; i<str.length; i++){
+		if(strLowerCase[i]!==strLowerCase[i+1]){
+			return strLowerCase[i]
+		}
+
+		
+	}else{
+return null
+	}
+
+	
+
+	
 }
-const input = prompt("Enter a string");
-alert(firstNonRepeatedChar(input)); 
+// const input = prompt("Enter a string");
+// alert(firstNonRepeatedChar(input)); 
