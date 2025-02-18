@@ -5,15 +5,16 @@ function firstNonRepeatedChar(str) {
 	if(str.length==0){
 		return null
 	}
-	for(let i=0; i<str.length; i++){
+	for(let i=0; i<strLowerCase.length; i++){
 		if(strLowerCase[i]!==strLowerCase[i+1]){
 			return strLowerCase[i]
 		}
 
 		
-	}else{
-return null
 	}
+
+	return null
+	
 
 	
 
